@@ -36,11 +36,11 @@ import org.omg.CosNaming.NamingContextExtPackage.AddressHelper;
 public class main {
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		
 		
-		String workspace = "..\\";
+		String workspace =  ".\\"; //".\\.\\file\\";
 		String strMasterInventoryFileName = "master inventory.csv";
 		String strScanFileName =  "strScan.csv"; 
 		String strMissingFileName = "missing.csv";
@@ -70,6 +70,7 @@ public class main {
 		{
 			System.out.println("\n      ------Program Finish------");
 		}
+		System.in.read();
 
 	}
 	
